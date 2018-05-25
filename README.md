@@ -5,3 +5,4 @@ http://how2j.cn/ 上的一本糊涂账实现项目
 2.没有使用Maven
 3.使用数据库为mysql
 4.环境:jdk1.8.0_141 win10 Eclipse mysql
+sdasdjkoj
