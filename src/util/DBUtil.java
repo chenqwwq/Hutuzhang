@@ -18,7 +18,7 @@ public class DBUtil {
 	static String database = "hutubill";
 	static String encoding = "UTF-8";
 	static String loginName = "root";
-	static String password = "19951217";
+	static String password = "admin";
 	
 	/**
 	 * 在静态代码块中加载驱动 

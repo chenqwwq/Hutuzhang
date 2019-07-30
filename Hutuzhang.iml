@@ -16,8 +16,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
-    <orderEntry type="module-library">
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="module-library" exported="">
       <library name="chart.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/chart.jar!/" />
@@ -26,7 +26,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="liquidlnf.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/liquidlnf.jar!/" />
@@ -35,7 +35,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="mysql-connector-java-5.1.41-bin.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.41-bin.jar!/" />
@@ -44,7 +44,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="swingx-core-1.6.2.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/swingx-core-1.6.2.jar!/" />
