@@ -1,7 +1,7 @@
 package dao;
 /**
- * Ïû·ÑÀà±ğµÄDAO²ã
- * <---------ÉÙ¸üĞÂ·½·¨ £º4/24   over------------>
+ * æ¶ˆè´¹ç±»åˆ«çš„DAOå±‚
+ * <---------å°‘æ›´æ–°æ–¹æ³• ï¼š4/24   over------------>
  */
 
 import java.sql.Connection;
@@ -25,7 +25,7 @@ public class CategoryDAO {
 	private static final String SQL_UPDATE = "UPDATE category SET name=? WHERE id=?";
 	
 	/**
-	 * ¸üĞÂÒ»¸öÏû·ÑÀà±ğ
+	 * æ›´æ–°ä¸€ä¸ªæ¶ˆè´¹ç±»åˆ«
 	 * @return
 	 */
 	public boolean update(Category category){
@@ -45,7 +45,7 @@ public class CategoryDAO {
 		}
 	}
 	/**
-	 * »ñÈ¡·ÖÀà×ÜÊı
+	 * è·å–åˆ†ç±»æ€»æ•°
 	 */
 	public int getTotal(){
 		int total = 0;
@@ -63,7 +63,7 @@ public class CategoryDAO {
 	
 	
 	/**
-	 * Ôö¼ÓÒ»Ìõ¼ÇÂ¼
+	 * å¢åŠ ä¸€æ¡è®°å½•
 	 */
 	public boolean add(Category category){
 		try(Connection conn = DBUtil.getConnection();
@@ -71,7 +71,7 @@ public class CategoryDAO {
 			prep.setString(1, category.getName());
 			
 			if(prep.executeUpdate()>0){
-				//È¡µÃ²åÈëµÄ¼ÇÂ¼µÄ×Ô¶¯Éú³ÉµÄid
+				//å–å¾—æ’å…¥çš„è®°å½•çš„è‡ªåŠ¨ç”Ÿæˆçš„id
 				ResultSet rs = prep.getGeneratedKeys();
 				if(rs.next()){
 					category.setId(rs.getInt(1));
@@ -86,7 +86,7 @@ public class CategoryDAO {
 	
 	
 	/**
-	 * ¸ù¾İidÉ¾³ıÒ»Ìõ¼ÇÂ¼
+	 * æ ¹æ®idåˆ é™¤ä¸€æ¡è®°å½•
 	 * @param id
 	 * @return
 	 */
@@ -106,9 +106,7 @@ public class CategoryDAO {
 	
 	
 	/**
-	 * ¸ù¾İid»ñÈ¡Ò»Ìõ·ÖÀà¼ÇÂ¼
-	 * @param id
-	 * @return
+	 * æ ¹æ®idè·å–ä¸€æ¡åˆ†ç±»è®°
 	 */
 	public Category getById(int id){
 		Category category = null;
@@ -128,7 +126,7 @@ public class CategoryDAO {
 	}
 	
 	/**
-	 * ÒÔListĞÎÊ½»ñÈ¡È«²¿µÄ·ÖÀàĞÅÏ¢¼ÇÂ¼  ¼ÇÂ¼ÖĞ²¢Ã»ÓĞRecordNumber
+	 * ä»¥Listå½¢å¼è·å–å…¨éƒ¨çš„åˆ†ç±»ä¿¡æ¯è®°å½•  è®°å½•ä¸­å¹¶æ²¡æœ‰RecordNumber
 	 * @return
 	 */
 	public List<Category> getCategory(){
@@ -137,7 +135,7 @@ public class CategoryDAO {
 	
 	
 	/**
-	 * ·ÖÒ³²éÑ¯
+	 * åˆ†é¡µæŸ¥è¯¢
 	 * @param start
 	 * @param count
 	 * @return
@@ -171,7 +169,7 @@ public class CategoryDAO {
 		CategoryDAO c = new CategoryDAO();
 //		System.out.println(c.getTotal());
 //		
-//		System.out.println(c.add(new Category("¾ÆË®")));
+//		System.out.println(c.add(new Category("é…’æ°´")));
 //		
 //		System.out.println(c.getTotal());
 //		
@@ -181,7 +179,7 @@ public class CategoryDAO {
 //			System.out.println(category);
 //		}
 		
-		Category c1 = new Category("ÂÃÓÎ");
+		Category c1 = new Category("æ—…æ¸¸");
 		c1.setId(1);
 		c.update(c1);
 //		

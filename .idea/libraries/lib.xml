@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/chart.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/swingx-core-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/liquidlnf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.41-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
